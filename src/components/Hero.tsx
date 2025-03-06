@@ -56,7 +56,7 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4 reveal-on-scroll" style={{ animationDelay: '300ms' }}>
             <a 
               href="#services" 
-              className="button-animated inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-white bg-primary hover:bg-primary/90 transition-all duration-300 rounded-md"
+              className="button-animated group inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-white bg-primary hover:bg-primary/90 transition-all duration-300 rounded-md"
             >
               Explore Our Services
               <ArrowRight size={16} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />
@@ -64,7 +64,7 @@ const Hero = () => {
             
             <a 
               href="#contact" 
-              className="button-animated inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-white bg-transparent border border-white/30 hover:bg-white/10 transition-all duration-300 rounded-md"
+              className="button-animated group inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-white bg-transparent border border-white/30 hover:bg-white/10 transition-all duration-300 rounded-md"
             >
               Get in Touch
             </a>

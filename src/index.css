@@ -128,7 +128,7 @@
   }
 
   .button-animated {
-    @apply relative overflow-hidden group transition-all duration-300 ease-out;
+    @apply relative overflow-hidden transition-all duration-300 ease-out;
   }
 
   .button-animated::after {
