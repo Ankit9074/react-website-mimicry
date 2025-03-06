@@ -12,12 +12,13 @@ const Index = () => {
   useEffect(() => {
     const handleScroll = () => {
       const revealElements = document.querySelectorAll('.reveal-on-scroll:not(.revealed)');
+      
       revealElements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
-        const elementHeight = element.getBoundingClientRect().height;
         const windowHeight = window.innerHeight;
         
-        if (elementTop < windowHeight - elementHeight / 4) {
+        // Trigger animation when element is 25% visible in the viewport
+        if (elementTop < windowHeight * 0.75) {
           element.classList.add('revealed');
         }
       });
@@ -25,7 +26,7 @@ const Index = () => {
     
     window.addEventListener('scroll', handleScroll);
     // Initial check for elements in view on page load
-    setTimeout(handleScroll, 100);
+    setTimeout(handleScroll, 300);
     
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
